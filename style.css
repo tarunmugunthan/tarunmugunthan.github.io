@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+    color: #333;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 10px 0px;
+}
+
+
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0px;
+}
+
+#cv, #about {
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 30px;
+}
+
+.navbar a:hover {
+    color: rgb(34, 85, 255);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+    
+}
+
+.container2 {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0px 0px;    
+}
+
+.container3 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0px 0px; 
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#foodback{
+    border: lightslategray;
+    border-width: 1px;
+}
+
+.menu-item, .logo {
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+.banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    background-color: lightsteelblue;
+}
+
+.pointer1 {
+    padding-top: 30px;
+    text-align: center;
+    color: slategray;
+}
+
+.pointer-box {
+    margin-top: 0px;
+    text-align: center;
+    color: silver;
+}
+
+.pointer2{
+    text-align: center;
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.card {
+    border: yellow;
+    width: 100%;
+    padding: 20px;
+}
+
+.pname, .pdes {
+}
+
+.pname:hover {
+    color: rgb(34, 85, 255);
+}
+
+.pname {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.pdes {
+    font-weight: 400;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.footer {
+    height: 120px;
+}
+
+.footer-end {
+    height: 30px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: silver;
+}
+
+.grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-auto-flow: dense;
+    max-width: 900px;
+    justify-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+}
+
+.canvas{
+    cursor: default;
+}
+
+
+@media(max-width: 480px){
+
+    .navbar ul {
+        display: flex;
+        margin: 40px 20px 0px 0px;
+    }
+
+    .menu-item, .logo {
+        font-size: 11pt;
+        font-weight: 400;
+        margin: 40px 0px 0px 20px;
+    }
+
+    h2{
+        font-size: 15pt;
+        margin: 40px 0px 20px 20px;
+    }
+
+    #name{
+        color: rgb(34, 85, 255);
+    }
+
+    #projects, #about{
+        display: none;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0px 20px 0px 0px;
+        
+    }
+    
+    .container2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;    
+    }
+    
+    .banner {
+        margin: auto;
+        width: 90vw;
+        height: 90vw;
+        background-color: lightsteelblue;
+    }
+
+    .grid {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        justify-items: center;
+    }
+
+    .card {
+        border: yellow;
+        width: 100vw;
+        padding: 0px;
+        
+    }
+
+    .container3 {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0px 0px; 
+        
+    }
+
+    .pname {
+        width: 90vw;
+        font-size: 14pt;
+        margin: auto;
+        font-weight: 600;
+    }
+    
+    .pdes {
+        width: 90vw;
+        font-size: 10pt;
+        font-weight: 400;
+        line-height: 1.2em;
+        margin: 2px auto 20px auto;
+    }
+
+    .thumbnail{
+        width: 90%;
+        margin: auto;
+    }
+
+    .pointer1 {
+        padding-top: 30px;
+        font-size: 12pt;
+        text-align: center;
+        color: slategray;
+    }
+
+    .pointer-box {
+        font-size: 12pt;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+        color: silver;
+    }
+
+    .footer-end {
+        height: 30px;
+        padding-top: 30px;
+        font-size: 10pt;
+        padding-bottom: 20px;
+        text-align: center;
+        color: silver;
+    }
+    
+}
+
+.project-title-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.sub-header {
+    font-size: 14pt;
+}
