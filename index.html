@@ -26,7 +26,7 @@ void setup(){
   size(1920,2160);
   m = new Mover();
   background(0);
-  frameRate(60);
+  frameRate(120);
 }
 
 void draw(){
@@ -57,7 +57,7 @@ Mover(){
     PVector mouse;
     mouse = new PVector(mouseX,mouseY);
     mouse.sub(location);
-    mouse.setMag(10);
+    mouse.setMag(2);
     acceleration = mouse;
     
     velocity.add(acceleration);
