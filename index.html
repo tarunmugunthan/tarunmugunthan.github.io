@@ -23,7 +23,7 @@
         Mover m;
 
 void setup(){
-  size(1920,1080);
+  size(1920,2160);
   m = new Mover();
   background(0);
   frameRate(120);
@@ -61,7 +61,7 @@ Mover(){
     acceleration = mouse;
     
     velocity.add(acceleration);
-    velocity.limit(5);
+    velocity.limit(15);
     
     location.add(velocity);
   }
