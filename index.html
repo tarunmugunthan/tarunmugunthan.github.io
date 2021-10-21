@@ -57,7 +57,7 @@ Mover(){
     PVector mouse;
     mouse = new PVector(mouseX,mouseY);
     mouse.sub(location);
-    mouse.setMag(1);
+    mouse.setMag(0.8);
     acceleration = mouse;
     
     velocity.add(acceleration);
